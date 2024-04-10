@@ -1,0 +1,435 @@
+/* utility class */
+body{
+  margin: 0;
+  padding: 0;
+  font-size: large;
+  background-color: rgb(16, 19, 26);
+  color: white;
+  line-height: 1.5em;
+  margin-bottom: 5em;
+  font-family: "Poppins", sans-serif;
+  color: gray;
+  
+}
+h1, h2, h3{ 
+  color: white;
+}
+.section-separator{
+  margin-top: 3em;
+}
+.container{
+  padding: 0 4em;
+  
+}
+.nav-div{
+  position: relative;
+}
+
+
+
+.modal{
+  background-color:white;
+  color: gray;
+  border: 1px solid gray;
+  /*box-sizing: border-box;*/
+  border-radius: 15px;
+  height: 400px;
+  width: 40%;
+  text-align: center;
+  margin-left: 30%;
+  display:none; 
+  position:absolute;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px black;
+  /* -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.5s; */
+  animation-name: animatetop;
+  animation-duration: 0.5s;
+
+}
+
+/*Add Animation */
+ @-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+/* @keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+} */
+.modal > button{
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.modal > h2{
+  border-radius: 2em;
+  padding: 10px;
+  color:black;
+
+
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+  .The-colored-btn{
+    background-color:rgb(20, 181, 230);
+    padding: 1em 2em;
+    border-radius: 35px;
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+  
+  }
+  .The-colorless-btn{
+      border:1px solid rgb(20, 181, 230);
+      padding: 1em 2em;
+      border-radius: 20px;
+      color:  rgb(20, 181, 230);;
+    }
+
+   
+  
+ul{
+  list-style-type: none;
+}
+.special-color{ 
+  color :rgb(33, 182, 228) !important;
+}
+/* The nav bar section */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  
+}
+
+nav a{
+  color: white;}
+
+nav > :last-child{
+  margin-right: 3em;
+  background-color:rgb(8, 133, 172);
+  padding: 7px 25px;
+  border-radius: 20px;
+} 
+@media only screen and (max-device-width: 320px){
+  body{
+    line-height: 1em;
+    font-size: small;
+    overflow-x: hidden;
+  }
+  .container{
+    margin: 0 5px;
+  }
+.section-separator{
+  margin-top: 1.5em;
+}
+.The-colored-btn{
+  padding: 10px 15px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+.The-colorless-btn{
+  padding: 10px 15px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+nav > ul> li{
+  display: block;
+  margin-left: 3px }
+
+  .hero-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+  
+  }
+  */the links in hero section*/
+.hero-section a:first-child{
+  /* background-color:rgb(20, 181, 230); */
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+}
+.hero-section a:last-child{
+  border:1px solid rgb(20, 181, 230);
+  padding: 7px 20px;
+  border-radius: 20px;
+  color:  rgb(20, 181, 230);;
+}
+.hero-section-links{
+  padding-top: 10px 0;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+}
+nav > .logo > img{
+  height: auto;
+  width: 200px;
+  padding-left: none;
+}
+nav > ul> li{
+  display: inline-block;
+  margin-left: 3em
+}
+
+
+
+/* The hero section */
+.hero-section{
+  background: linear-gradient(to right, rgb(16,20,27),rgb(16,22,30),rgb(15, 38, 56),rgba(9, 46, 66, 0.6));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+}
+.hero-section :first-child{
+}
+
+/* the links in hero section */
+.hero-section a:first-child{
+  background-color:rgb(20, 181, 230);
+  padding: 7px 25px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+}
+.hero-section a:last-child{
+  border:1px solid rgb(20, 181, 230);
+  padding: 7px 20px;
+  border-radius: 20px;
+  color:  rgb(20, 181, 230);;
+}
+.hero-section-links{
+  padding-top: 15px;
+}
+/* Main-section */
+
+.My-service{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.My-service > :first-child{
+  padding-right: 5em;
+  padding-bottom: 10em;
+}
+/* Boxes in the main section */
+.My-service-box{
+  width: 13em;
+  height: 12em;
+  text-align: center;
+  margin-bottom: 1em;;
+  padding: 10px;
+  border-radius: 0.2em;
+  background: linear-gradient(to bottom,rgb(26,58,73), rgb(16,46,61), rgb(15,44,58),rgb(15,44,47));
+  /* box-shadow: 1px 5px 2px; */
+} 
+.My-service a{
+  background-color:rgb(20, 181, 230);
+  padding: 7px 25px;
+  border-radius: 20px;
+  color: white;
+  margin-right: 10px;
+  padding-bottom: 1em;
+}
+
+aside{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside > .My-service-box-1{
+  margin-right: 1em;
+  margin-bottom: 3em;
+
+}
+/* Years of experience and my stat as a web developer */
+.ranking-experience{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  background: linear-gradient(to left, rgb(16,20,27),rgb(16,22,30),rgb(15, 38, 56),rgba(9, 46, 66, 0.6));
+  height: 3em;}
+  
+
+  .space{
+    padding-inline-end: 45%;
+    text-align:right;
+  }
+  .progress{
+  width: 100%;
+  }
+  .More-about-me{
+    text-align: center;
+  }
+  .my-education-my-skill-progress-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1em;
+  }
+  .my-education-my-skill {
+    width: 40%
+  }
+  .progress-bar{
+    width: 50%;
+  }
+
+
+/* My latest proojects */
+.My-latest-projects{
+  background: linear-gradient(to right, rgb(16,20,27),rgb(16,22,30),rgb(15, 38, 56),rgba(9, 46, 66, 0.6));
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5em;
+  padding-top: 3em;
+ 
+}
+.My-latest-projects ul li{
+  display: inline-block;
+  padding-right: 3em;
+  margin: 2em 0;
+}
+.My-latest-projects a{
+  color: white !important;
+}
+.My-latest-projects-cards
+{
+  display: flex;
+  justify-content: space-between;
+}
+.My-latest-projects-cards img{
+  width: 100%;
+  height: 250px;
+  border-radius: 4px;
+
+}
+
+.My-latest-projects-cards div{
+  height: 400px;
+  width: 20%;
+  border: 1px solid rgb(20, 181, 230);
+  border-radius: 8px;
+}
+.extra-margin{
+  margin-top: 3em;}
+.My-Articles{
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.5em;
+  padding-top: 3em;
+}
+
+.My-Articles-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.My-Articles-cards > div{
+  height: 400px;
+  width: 30%;
+  border: 2px solid rgb(20, 181, 230);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.My-Articles-cards img{
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+}
+.box3{
+  line-height: 1em;
+  background: linear-gradient(to right, rgb(20, 29, 29));
+
+}
+.response-1{
+  background-color:rgb(7, 60, 77);;
+  box-shadow: 0px 0px 3px;
+  width: 70%;
+  text-align: left;
+  padding-left: 2em;
+  align-items: center;
+  margin-left: 8em;
+  padding-bottom: 1em;
+ 
+}
+.response-1 img{
+  width: 100px;
+  border-radius: 1500em;
+  padding-top: 1em;
+}
+
+/* footer */
+.footer-1{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-1 img{
+  width: 80%;
+}
+
+.footer-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-2-1{
+  width: 25%;
+}
+.footer-2-1 i{
+  padding-right: 1em;
+}
+.footer-2-2, .footer-2-3{
+  width: 15%;
+}
+.footer-2-4{
+  width:20%;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color :rgb(7, 60, 77);
+  border-radius: 8px;
+}
+.footer-2-4 .The-colored-btn{
+  width: 40%;
+  font-size: larger;
+  font-weight: 400;
+  margin-top: 1em;
+  padding: 7px 25px !important;
+}
+.copyright{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-3 hr{
+ color: gray;
+  
+}
+  
